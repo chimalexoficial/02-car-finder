@@ -1,174 +1,174 @@
-const autos = [
+const cars = [
 	{
-		marca: 'BMW',
-		modelo: 'Serie 3',
+		make: 'BMW',
+		model: 'Serie 3',
 		year: 2020,
-		precio: 30000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
+		price: 30000,
+		doors: 4,
+		color: 'White',
+		transmission: 'automatic'
 	},
 	{ 
-        marca: 'Audi', 
-        modelo: 'A4', 
+        make: 'Audi', 
+        model: 'A4', 
         year: 2020, 
-        precio: 40000, 
-        puertas: 4, 
-        color: 'Negro', 
-        transmision: 'automatico' 
+        price: 40000, 
+        doors: 4, 
+        color: 'Black', 
+        transmission: 'automatic' 
     },
 	{
-		marca: 'Ford',
-		modelo: 'Mustang',
+		make: 'Ford',
+		model: 'Mustang',
 		year: 2015,
-		precio: 20000,
-		puertas: 2,
-		color: 'Blanco',
-		transmision: 'automatico'
+		price: 20000,
+		doors: 2,
+		color: 'White',
+		transmission: 'automatic'
 	},
 	{ 
-        marca: 'Audi', 
-        modelo: 'A6', 
+        make: 'Audi', 
+        model: 'A6', 
         year: 2020, 
-        precio: 35000, 
-        puertas: 4, 
-        color: 'Negro', 
-        transmision: 'automatico' 
+        price: 35000, 
+        doors: 4, 
+        color: 'Black', 
+        transmission: 'automatic' 
     },
 	{
-		marca: 'BMW',
-		modelo: 'Serie 5',
+		make: 'BMW',
+		model: 'Serie 5',
 		year: 2016,
-		precio: 70000,
-		puertas: 4,
-		color: 'Rojo',
-		transmision: 'automatico'
+		price: 70000,
+		doors: 4,
+		color: 'Red',
+		transmission: 'automatic'
 	},
 	{
-		marca: 'Mercedes Benz',
-		modelo: 'Clase C',
+		make: 'Mercedes Benz',
+		model: 'Clase C',
 		year: 2015,
-		precio: 25000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
+		price: 25000,
+		doors: 4,
+		color: 'White',
+		transmission: 'automatic'
 	},
 	{
-		marca: 'Chevrolet',
-		modelo: 'Camaro',
+		make: 'Chevrolet',
+		model: 'Camaro',
 		year: 2018,
-		precio: 60000,
-		puertas: 2,
-		color: 'Rojo',
-		transmision: 'manual'
+		price: 60000,
+		doors: 2,
+		color: 'Red',
+		transmission: 'manual'
 	},
 	{ 
-        marca: 'Ford', 
-        modelo: 'Mustang', 
+        make: 'Ford', 
+        model: 'Mustang', 
         year: 2019, 
-        precio: 80000, 
-        puertas: 2, 
-        color: 'Rojo', 
-        transmision: 'manual' 
+        price: 80000, 
+        doors: 2, 
+        color: 'Red', 
+        transmission: 'manual' 
     },
 	{
-		marca: 'Dodge',
-		modelo: 'Challenger',
+		make: 'Dodge',
+		model: 'Challenger',
 		year: 2020,
-		precio: 40000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
+		price: 40000,
+		doors: 4,
+		color: 'White',
+		transmission: 'automatic'
 	},
 	{ 
-        marca: 'Audi', 
-        modelo: 'A3', 
+        make: 'Audi', 
+        model: 'A3', 
         year: 2017, 
-        precio: 55000, 
-        puertas: 2, 
-        color: 'Negro', 
-        transmision: 
+        price: 55000, 
+        doors: 2, 
+        color: 'Black', 
+        transmission: 
         'manual' 
     },
 	{
-		marca: 'Dodge',
-		modelo: 'Challenger',
+		make: 'Dodge',
+		model: 'Challenger',
 		year: 2020,
-		precio: 25000,
-		puertas: 2,
-		color: 'Rojo',
-		transmision: 'manual'
+		price: 25000,
+		doors: 2,
+		color: 'Red',
+		transmission: 'manual'
 	},
 	{
-		marca: 'Mercedes Benz',
-		modelo: 'Clase C',
+		make: 'Mercedes Benz',
+		model: 'Clase C',
 		year: 2018,
-		precio: 45000,
-		puertas: 4,
-		color: 'Azul',
-		transmision: 'automatico'
+		price: 45000,
+		doors: 4,
+		color: 'Blue',
+		transmission: 'automatic'
 	},
 	{
-		marca: 'BMW',
-		modelo: 'Serie 5',
+		make: 'BMW',
+		model: 'Serie 5',
 		year: 2019,
-		precio: 90000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
+		price: 90000,
+		doors: 4,
+		color: 'White',
+		transmission: 'automatic'
 	},
 	{ 
-        marca: 'Ford', 
-        modelo: 'Mustang', 
+        make: 'Ford', 
+        model: 'Mustang', 
         year: 2017, 
-        precio: 60000, 
-        puertas: 2, 
-        color: 'Negro', 
-        transmision: 'manual' 
+        price: 60000, 
+        doors: 2, 
+        color: 'Black', 
+        transmission: 'manual' 
     },
 	{
-		marca: 'Dodge',
-		modelo: 'Challenger',
+		make: 'Dodge',
+		model: 'Challenger',
 		year: 2015,
-		precio: 35000,
-		puertas: 2,
-		color: 'Azul',
-		transmision: 'automatico'
+		price: 35000,
+		doors: 2,
+		color: 'Blue',
+		transmission: 'automatic'
 	},
 	{
-		marca: 'BMW',
-		modelo: 'Serie 3',
+		make: 'BMW',
+		model: 'Serie 3',
 		year: 2018,
-		precio: 50000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
+		price: 50000,
+		doors: 4,
+		color: 'White',
+		transmission: 'automatic'
 	},
 	{
-		marca: 'BMW',
-		modelo: 'Serie 5',
+		make: 'BMW',
+		model: 'Serie 5',
 		year: 2017,
-		precio: 80000,
-		puertas: 4,
-		color: 'Negro',
-		transmision: 'automatico'
+		price: 80000,
+		doors: 4,
+		color: 'Black',
+		transmission: 'automatic'
 	},
 	{
-		marca: 'Mercedes Benz',
-		modelo: 'Clase C',
+		make: 'Mercedes Benz',
+		model: 'Clase C',
 		year: 2018,
-		precio: 40000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
+		price: 40000,
+		doors: 4,
+		color: 'White',
+		transmission: 'automatic'
 	},
 	{ 
-        marca: 'Audi', 
-        modelo: 'A4', 
+        make: 'Audi', 
+        model: 'A4', 
         year: 2016, 
-        precio: 30000, 
-        puertas: 4, 
-        color: 'Azul', 
-        transmision: 'automatico' 
+        price: 30000, 
+        doors: 4, 
+        color: 'Blue', 
+        transmission: 'automatic' 
     }
 ];
