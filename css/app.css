@@ -11,7 +11,7 @@ h1 {
     padding: 3rem 0;
     margin: 0;
 }
-.contenedor {
+.container {
     background-color: white;
     max-width: 1200px;
     margin: 0 auto;
@@ -46,7 +46,7 @@ form {
 #resultado p:last-of-type{
     border: none;
 }
-.alerta {
+.alert {
     padding: 1rem;
     text-align: center;
     font-weight: bold;

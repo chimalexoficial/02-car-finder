@@ -114,10 +114,15 @@ function generateSelectYears() {
 
 // Searching car according to form
 function searchCar() {
-    const result = cars.filter(filterMake).filter(searchYear).filter(filterMin).filter(filterMax).filter(filterDoors).filter(filterTransmission)
+    const result = cars.filter(filterMake).filter(searchYear).filter(filterMin).filter(filterMax).filter(filterDoors).filter(filterTransmission).filter(filterColor)
 
     console.log(result);
-    showCars(result);
+    
+    if(result.length) {
+        showCars(result);
+    } else {
+        filterResults();
+    }
 }
 
 // Searching by make
@@ -168,5 +173,22 @@ function filterTransmission(car) {
         return car.transmission === transmission;
     }
     return car;
+}
+
+function filterColor(car) {
+    const { color } = dataSearch;
+    if(color) {
+        return car.color === color;
+    }
+    return car;
+}
+
+function filterResults() {
+    cleanHTML();
+
+    const noResult = document.createElement('div');
+    noResult.classList.add('alert', 'error');
+    noResult.textContent = 'Sorry, no results available.';
+    results.appendChild(noResult);
 }
 
